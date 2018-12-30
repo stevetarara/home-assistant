@@ -1,12 +1,9 @@
 known_devices.yaml
 secrets.yaml
-entity_registry.yaml
 .HA_VERSION
 zones.yaml
-sensors/location.yaml
-scripts/tornado_alarm.yaml
-scripts/test_alarm.yaml
-scripts/security_alarm.yaml
+.homekit*
+.storage
 *ios.conf
 *.log
 *.db
@@ -20,4 +17,3 @@ deps/
 ._*
 .uuid
 !.gitignore
-

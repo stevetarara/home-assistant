@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Living Room Harmony",
@@ -23,7 +23,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Bed Room Harmony",
@@ -45,7 +45,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Steve",
@@ -62,7 +62,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "battery": 93,
@@ -87,7 +87,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "battery": 97,
@@ -109,24 +109,24 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Bedroom Motion Detection Automation On",
-                    "last_triggered": "2018-12-30T15:53:38.504240+00:00"
+                    "last_triggered": "2018-12-30T15:53:59.591361+00:00"
                 },
                 "context": {
-                    "id": "765b673f6601484f8a062676ea2e4d52",
+                    "id": "dfa00418816e438da3bb9cdcf0f039fc",
                     "user_id": null
                 },
                 "entity_id": "automation.bedroom_motion_detection_automation_on",
                 "last_changed": "2018-12-30T15:52:49.234014+00:00",
-                "last_updated": "2018-12-30T15:53:38.504430+00:00",
+                "last_updated": "2018-12-30T15:53:59.591495+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Turn On Bed Room TiVo",
@@ -144,7 +144,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "harmony_living_room_update_current_status",
@@ -162,7 +162,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Tanz Light Off",
@@ -180,7 +180,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Morning Lights Off",
@@ -198,7 +198,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Update Available Notifications",
@@ -215,7 +215,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Turn On Living Room TiVo",
@@ -233,7 +233,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Turn Off Living Room Media",
@@ -251,7 +251,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Turn Off Bed Room Media",
@@ -269,7 +269,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Tanz Light On",
@@ -287,7 +287,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Aquarium Bowl Light Off",
@@ -305,7 +305,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "harmony_bedroom_update_current_status",
@@ -323,24 +323,24 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Bedroom Motion Detection Automation Off",
-                    "last_triggered": null
+                    "last_triggered": "2018-12-30T15:59:03.076917+00:00"
                 },
                 "context": {
-                    "id": "3257dde1ed984e74a0c1f001d533d0c4",
+                    "id": "aa0bec2e90ec4f79a7274e9085aaed0e",
                     "user_id": null
                 },
                 "entity_id": "automation.bedroom_motion_detection_automation_off",
                 "last_changed": "2018-12-30T15:52:49.248885+00:00",
-                "last_updated": "2018-12-30T15:52:49.248885+00:00",
+                "last_updated": "2018-12-30T15:59:03.077077+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Morning Lights On",
@@ -357,7 +357,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Turn On Living Room AppleTv",
@@ -375,7 +375,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Evening Lights Off",
@@ -393,7 +393,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Aquarium Bowl Light On",
@@ -411,7 +411,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Bathroom Light Automation",
@@ -428,7 +428,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Turn On Bed Room AppleTv",
@@ -446,7 +446,7 @@
             }
         },
         {
-            "last_seen": "2018-12-30T15:53:44.002289+00:00",
+            "last_seen": "2018-12-30T16:23:45.004482+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Evening Lights On",
