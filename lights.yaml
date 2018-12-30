@@ -1,0 +1,20 @@
+- platform: group
+  name: Bathroom Lights
+  entities:
+    - light.bathroom_1
+    - light.bathroom_2
+    - light.bathroom_3
+
+- platform: group
+  name: Living Room Lights
+  entities:
+    - light.floor_bloom
+    - light.table_left
+    - light.table_right
+
+# - platform: group
+#   name: Morning Lights
+#   entities:
+#     - light.living_room_lights
+#     - light.laundry_light
+#     - light.hall_light

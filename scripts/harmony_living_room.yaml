@@ -1,0 +1,24 @@
+harmony_living_room_power_off:
+  alias: Power Off Living Room TV
+  sequence:
+  - data:
+      activity: '-1'
+    entity_id: remote.living_room_hub
+    service: remote.turn_off
+
+harmony_living_room_watch_tivo:
+  alias: Watch Living Room TiVo
+  sequence:
+  - data:
+      activity: '31755250'
+    entity_id: remote.living_room_hub
+    service: remote.turn_on
+
+harmony_living_room_watch_appletv:
+  alias: Watch Living Room AppleTV
+  sequence:
+  - data:
+      activity: '31755302'
+    entity_id: remote.living_room_hub
+    service: remote.turn_on
+    

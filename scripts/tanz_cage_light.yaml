@@ -1,0 +1,14 @@
+### Tanz's Light Switch Scripts
+tanz_light_on:
+  alias: Tanz Light On
+  sequence:
+  - data:
+      entity_id: switch.tanzs_light
+    service: switch.turn_on
+
+tanz_light_off:
+  alias: Tanz Light Off
+  sequence:
+  - data:
+      entity_id: switch.tanzs_light
+    service: switch.turn_off

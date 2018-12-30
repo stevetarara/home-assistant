@@ -1,0 +1,35 @@
+- alias: Bedroom Motion Detection Automation On
+  initial_state: 'on'
+  hide_entity: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.bed_room_motion_sensor
+    to: 'on'
+  condition:
+   condition: time
+   before: '11:00'
+   after: '10:00'
+  action:
+    - service: light.turn_on
+      entity_id: light.bedroom_light
+      data:
+        transition: 5
+        brightness: 75
+    - service: script.turn_on
+      entity_id: script.harmony_bedroom_watch_tivo
+
+
+- alias: Bedroom Motion Detection Automation Off
+  initial_state: 'on'
+  hide_entity: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.bed_room_motion_sensor
+    to: 'off'
+    for:
+      minutes: 5
+  action:
+    - service: light.turn_off
+      entity_id: light.bedroom_light
+      data:
+        transition: 120

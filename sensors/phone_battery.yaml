@@ -1,0 +1,19 @@
+# - platform: mqtt
+#   state_topic: "owntracks/steve/st"
+#   name: "Charge"
+#   unit_of_measurement: "%"
+#   value_template: '{{ value_json.batt }}'
+#   device_class: battery
+
+- platform: template
+  sensors:
+    battery_iphone:
+      friendly_name: iPhone Battery
+      unit_of_measurement: '%'
+      value_template: >-
+          {%- if states.device_tracker.steve_st.attributes.battery %}
+              {{ states.device_tracker.steve_st.attributes.battery|round }}
+          {% else %}
+              {{ states.sensor.steve_st.state }}
+          {%- endif %}
+      device_class: battery

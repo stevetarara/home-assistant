@@ -1,0 +1,17 @@
+harmony_lr:
+  name: Living Room Harmony
+  options:
+   - PowerOff
+   - TiVo
+   - AppleTV
+  initial: PowerOff
+  icon: mdi:television
+
+harmony_br:
+  name: Bed Room Harmony
+  options:
+   - PowerOff
+   - TiVo
+   - AppleTV
+  initial: PowerOff
+  icon: mdi:television

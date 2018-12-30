@@ -1,0 +1,21 @@
+- alias: Aquarium Bowl Light On
+  initial_state: 'on'
+  hide_entity: true
+  trigger:
+    - platform: time
+      at: '08:00:00'
+    - platform: time
+      at: '15:30:00'
+  action:
+    service: script.aquarium_bowl_light_on
+
+- alias: Aquarium Bowl Light Off
+  initial_state: 'on'
+  hide_entity: true
+  trigger:
+    - platform: time
+      at: '11:30:00'
+    - platform: time
+      at: '19:00:00'
+  action:
+    service: script.aquarium_bowl_light_off

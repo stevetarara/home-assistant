@@ -1,0 +1,132 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Avalon Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 42.524908
+  longitude: -71.424171
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+  # Customization file
+  customize: !include_dir_merge_named customize
+
+zone 1:
+  name: Work
+  latitude: 42.367007
+  longitude: -71.243451
+  radius: 100
+  icon: mdi:worker
+
+zone 2:
+    name: Gym
+    latitude: 42.557658
+    longitude: -71.435385
+    radius: 100
+    icon: mdi:dumbbell
+
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+http:
+  base_url: !secret http_url
+  api_password: !secret api_password
+
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+weather:
+- platform: darksky
+  api_key: !secret darksky_api
+  mode: daily
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+# Logitech Remote
+remote:
+  - platform: harmony
+    hide_entity: true
+    name: Living Room Hub
+    host: 192.168.1.104
+
+  - platform: harmony
+    hide_entity: true
+    name: Bed Room Hub
+    host: 192.168.1.116
+
+# Specific Wemo switches
+wemo:
+  discovery: true
+  static:
+    - 192.168.1.101
+    - 192.168.1.112
+
+# homekit enabled
+homekit:
+  filter:
+    include_entities:
+      - light.floor_bloom
+      - light.table_left
+      - light.table_right
+      - light.laundry
+      - light.hall
+      - light.bedroom
+      - switch.tanzs_light
+      - switch.aquarium_bowl_light
+      - binary_sensor.bed_room_motion_sensor
+      - input_boolean.steve_present
+
+
+#secret: !include_dir_merge_list secrets
+automation: !include_dir_merge_list automation
+binary_sensor: !include_dir_merge_list binary_sensors
+device_tracker: !include_dir_merge_list device_trackers
+group: !include_dir_merge_named groups
+input_select: !include_dir_merge_named input_selects
+input_boolean: !include_dir_merge_named input_booleans
+light: !include lights.yaml
+panel_iframe: !include_dir_merge_list panels
+sensor: !include_dir_merge_list sensors
+script: !include_dir_merge_named scripts
+scene: !include_dir_merge_named scenes
+switch: !include_dir_merge_list switches

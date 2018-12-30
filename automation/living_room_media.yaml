@@ -1,0 +1,50 @@
+- alias: harmony_living_room_update_current_status
+  hide_entity: true
+  trigger:
+  - platform: state
+    entity_id: remote.living_room_hub
+  - platform: homeassistant
+    event: start
+  action:
+    service: input_select.select_option
+    data_template:
+      entity_id: input_select.harmony_lr
+      option: '{{ states.remote.living_room_hub.attributes.current_activity }}'
+
+- alias: Turn On Living Room TiVo
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: input_select.harmony_lr
+    to: "TiVo"
+  action:
+    - service: script.turn_on
+      entity_id: script.harmony_living_room_watch_tivo
+    - condition: sun
+      after: sunset
+    - service: scene.turn_on
+      entity_id: scene.watch_living_room_media
+
+- alias: Turn On Living Room AppleTv
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: input_select.harmony_lr
+    to: "AppleTV"
+  action:
+    - service: script.turn_on
+      entity_id: script.harmony_living_room_watch_appletv
+    - condition: sun
+      after: sunset
+    - service: scene.turn_on
+      entity_id: scene.watch_living_room_media
+
+- alias: Turn Off Living Room Media
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: input_select.harmony_lr
+    to: "PowerOff"
+  action:
+    service: script.turn_on
+    entity_id: script.harmony_living_room_power_off

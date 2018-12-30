@@ -1,0 +1,7 @@
+- alias: Bathroom Light Automation
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: light.bathroom_lights
+  action:
+    service: script.bathroom_light_control

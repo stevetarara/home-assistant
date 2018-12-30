@@ -1,0 +1,13 @@
+- name: Watch Living Room Media
+  entities:
+    group.living_room_group:
+      state: true
+      brightness: 20
+      transition: 600
+      rgb_color: [255,255,255] # White
+    light.laundry_light:
+      state: false
+      transition: 60
+    light.hall_light:
+      state: false
+      transition: 60

@@ -1,0 +1,17 @@
+- alias: Tanz Light On
+  initial_state: 'on'
+  hide_entity: true
+  trigger:
+    platform: time
+    at: '10:00:00'
+  action:
+    service: script.tanz_light_on
+
+- alias: Tanz Light Off
+  initial_state: 'on'
+  hide_entity: true
+  trigger:
+    platform: time
+    at: '16:30:00'
+  action:
+    service: script.tanz_light_off

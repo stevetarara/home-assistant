@@ -1,0 +1,179 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.bedroom_apple_tv",
+                "name": null,
+                "platform": "apple_tv",
+                "unique_id": "82b05bfbdb7f8823d787490e4e26624eeb08ec5f31320062513d01ac6cca8ea4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.living_room_apple_tv",
+                "name": null,
+                "platform": "apple_tv",
+                "unique_id": "542e97d1b52109247fa36f300da01d59bf7c4ccfe7e6f9921a029bbc7a9c6173"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "remote.bedroom_apple_tv",
+                "name": null,
+                "platform": "apple_tv",
+                "unique_id": "82b05bfbdb7f8823d787490e4e26624eeb08ec5f31320062513d01ac6cca8ea4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "remote.living_room_apple_tv",
+                "name": null,
+                "platform": "apple_tv",
+                "unique_id": "542e97d1b52109247fa36f300da01d59bf7c4ccfe7e6f9921a029bbc7a9c6173"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "77300c6326454807be9c7c8aa1d57d71",
+                "disabled_by": null,
+                "entity_id": "light.table_left",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:01:24:08:ff-0b"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "03c1fa9c00864e58bd94cad0f91e68a2",
+                "disabled_by": null,
+                "entity_id": "light.hall_light",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:10:30:19:d0-0b"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "72f0d85c6b80465bb5e507fae17ccfda",
+                "disabled_by": null,
+                "entity_id": "light.bedroom_light",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:37:b7:c3-0b"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "ee6e399e246f47718f3af38d43a51ac0",
+                "disabled_by": null,
+                "entity_id": "light.bathroom_3",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "e2:0d:b9:ff:fe:02:1e:14-0a"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "e8d591cde6174d5596cc84ba0f403126",
+                "disabled_by": null,
+                "entity_id": "light.floor_bloom",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:00:c0:a8:ab-0b"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "65509e1ee21744d2b82ac772aa739978",
+                "disabled_by": null,
+                "entity_id": "light.bathroom_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "e2:0d:b9:ff:fe:02:13:9e-0a"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "4071f9f2807f48ac8f8e0fb043e11f63",
+                "disabled_by": null,
+                "entity_id": "light.bathroom_2",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "e2:0d:b9:ff:fe:02:13:4c-0a"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "855968839e884d2490baa69bb271ea65",
+                "disabled_by": null,
+                "entity_id": "light.table_right",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:00:c0:a8:af-0b"
+            },
+            {
+                "config_entry_id": "489dfa53fc1f4f7098f4e511efd985cb",
+                "device_id": "edff8f6d9800414fb6fb0d6dcfa38276",
+                "disabled_by": null,
+                "entity_id": "light.laundry_light",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:10:30:19:d4-0b"
+            },
+            {
+                "config_entry_id": "c5c8c119b7f441d2b426af3e268d02a8",
+                "device_id": "b115bc0391b5401da103ccd555d2bdb6",
+                "disabled_by": null,
+                "entity_id": "sensor.steve_xs_battery_level",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "level_steve_xs"
+            },
+            {
+                "config_entry_id": "c5c8c119b7f441d2b426af3e268d02a8",
+                "device_id": "b115bc0391b5401da103ccd555d2bdb6",
+                "disabled_by": null,
+                "entity_id": "sensor.steve_xs_battery_state",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "state_steve_xs"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.aquarium_light",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221231K010049D"
+            },
+            {
+                "config_entry_id": "c5c8c119b7f441d2b426af3e268d02a8",
+                "device_id": "b115bc0391b5401da103ccd555d2bdb6",
+                "disabled_by": null,
+                "entity_id": "sensor.steve_xs_battery_state_2",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "state_steve_mobile"
+            },
+            {
+                "config_entry_id": "c5c8c119b7f441d2b426af3e268d02a8",
+                "device_id": "b115bc0391b5401da103ccd555d2bdb6",
+                "disabled_by": null,
+                "entity_id": "sensor.steve_xs_battery_level_2",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "level_steve_mobile"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.bed_room_motion_sensor",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221201L0100701"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

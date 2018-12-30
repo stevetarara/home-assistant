@@ -1,0 +1,14 @@
+### Aquarium Bowl Light Switch Scripts
+aquarium_bowl_light_on:
+  alias: Aquarium Bowl Light On
+  sequence:
+  - data:
+      entity_id: switch.aquarium_bowl_light
+    service: switch.turn_on
+
+aquarium_bowl_light_off:
+  alias: Aquarium Bowl Light Off
+  sequence:
+  - data:
+      entity_id: switch.aquarium_bowl_light
+    service: switch.turn_off

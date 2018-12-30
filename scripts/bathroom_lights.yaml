@@ -1,0 +1,7 @@
+bathroom_light_control:
+  alias: Set Bathroom Light Brightness
+  sequence:
+    service: light.turn_on
+    data:
+      entity_id: light.bathroom_lights
+      brightness_pct: 25

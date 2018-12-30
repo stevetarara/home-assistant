@@ -1,0 +1,23 @@
+harmony_bedroom_power_off:
+  alias: Power Off Bedroom TV
+  sequence:
+  - data:
+      activity: '-1'
+    entity_id: remote.bed_room_hub
+    service: remote.turn_off
+
+harmony_bedroom_watch_tivo:
+  alias: Watch Bedroom TiVo
+  sequence:
+  - data:
+      activity: '37209774'
+    entity_id: remote.bed_room_hub
+    service: remote.turn_on
+
+harmony_bedroom_watch_appletv:
+  alias: Watch Bedroom AppleTV
+  sequence:
+  - data:
+      activity: '37205469'
+    entity_id: remote.bed_room_hub
+    service: remote.turn_on

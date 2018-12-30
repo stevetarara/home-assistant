@@ -1,0 +1,41 @@
+# Living Room
+script.harmony_living_room_power_off:
+  hidden: true
+script.harmony_living_room_watch_tivo:
+  hidden: true
+script.harmony_living_room_watch_appletv:
+  hidden: true
+script.tanz_light_on:
+  hidden: true
+script.tanz_light_off:
+  hidden: true
+script.aquarium_bowl_light_on:
+  hidden: false
+script.aquarium_bowl_light_off:
+  hidden: false
+remote.living_room_hub:
+  hidden: true
+
+# Bed Room
+remote.bed_room_hub:
+  hidden: true
+script.harmony_bedroom_power_off:
+  hidden: true
+script.harmony_bedroom_watch_tivo:
+  hidden: true
+script.harmony_bedroom_watch_appletv:
+  hidden: true
+
+# Living Room Lights
+script.hue_bloom_lr_left_table_light_on:
+  hidden: true
+script.hue_bloom_lr_right_table_light_on:
+  hidden: true
+script.hue_bloom_lr_left_table_light_off:
+  hidden: true
+script.hue_bloom_lr_right_table_light_off:
+  hidden: true
+
+# Bathroom
+script.bathroom_light_control:
+  hidden: true

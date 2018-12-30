@@ -1,0 +1,142 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "steve"
+                },
+                "id": "44b46258365946f8b0aa109958eaff2f",
+                "user_id": "fcf36054e88e4c4b9a20092ac8e110c0"
+            },
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "legacy_api_password",
+                "data": {},
+                "id": "1372905e1d2e46aeb6d7840b2e88b94e",
+                "user_id": "93bd400d4e4d44eead8da8367bd5ecf4"
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ha.thesoftbytes.com:8123/",
+                "client_name": null,
+                "created_at": "2018-12-26T23:34:00.956775+00:00",
+                "id": "2925883194fc4bd7ad67371c77405a51",
+                "jwt_key": "3e54beb9db8183e47fe3bc1f096abe74e235a922dbe81c8ba93530d497059c3dc96ddadcbddf4512de4b90cdeb17df4d050312be700479011436aba7e306890c",
+                "last_used_at": "2018-12-30T15:39:47.639970+00:00",
+                "last_used_ip": "73.253.102.254",
+                "token": "5fa02a5aa29c6503916ea1e55217c4277e63189e094a0770e86c1b2adbae197a3ddb149c16273f5081936dbf17c46ac522f1b726b3b7d71e9633bc217eac423c",
+                "token_type": "normal",
+                "user_id": "fcf36054e88e4c4b9a20092ac8e110c0"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ha.thesoftbytes.com:8123/",
+                "client_name": null,
+                "created_at": "2018-12-26T23:35:49.658554+00:00",
+                "id": "b195ca60f34440feabc9311799cf3ae0",
+                "jwt_key": "28012c5efe52f1b574cc2ca26f40027fd45900003fad6cdad101827b01804332d2ac8969cc1aef2f47aa0c0766caca40448d3b86518f5951b982fcec29747458",
+                "last_used_at": "2018-12-26T23:35:49.658778+00:00",
+                "last_used_ip": "73.253.102.254",
+                "token": "e5ca5c6d99a949c22fa2a464770a62b0537ebfae51a2c05b589daa5bd38b7894566a9a9117c897cc7cf18419a73680fe661fbc05336344de24a4184ddb5f7a8d",
+                "token_type": "normal",
+                "user_id": "fcf36054e88e4c4b9a20092ac8e110c0"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ha.thesoftbytes.com:8123/",
+                "client_name": null,
+                "created_at": "2018-12-26T23:43:33.367841+00:00",
+                "id": "4b6a9eb939e8400f8018c8238ed53774",
+                "jwt_key": "1bcac31dde7645bd029410baf4e6682a8355fbd4966f1c35c76028d0cc878966c677dccff8d259e15445783c4c56e34b357a881e4d7eb7d67738da14b2aa9e54",
+                "last_used_at": "2018-12-26T23:43:33.368030+00:00",
+                "last_used_ip": "73.253.102.254",
+                "token": "04f9fbb9d5b4abfe135f1c63c99b9c7ec2bc7370ebf6b892987d364dbe68eeac5454b271618d1b9f2628ab80f218e49a1230658f4b2f97d82dd5267884721553",
+                "token_type": "normal",
+                "user_id": "fcf36054e88e4c4b9a20092ac8e110c0"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.1.75:8123/",
+                "client_name": null,
+                "created_at": "2018-12-26T23:44:02.471492+00:00",
+                "id": "0ab4b3b91c104dccb52df24ff4819f6f",
+                "jwt_key": "1875e4c3729d3d0f0196f0083056fd837dd25e814c2de1d69579c48c4b8fe8a7197b4b6f18044d8c1f6165129fb4d0f32081a8c16c69a46777d0a9bd474dd60d",
+                "last_used_at": "2018-12-26T23:44:02.471687+00:00",
+                "last_used_ip": "192.168.1.110",
+                "token": "192daf6de0ac3e1c9c80fd471dfe40d88989f4619af9b90f39b357347515c4f3697635e19951663d0df04bd0a8b15b8bfae5e3f79043ad8fc7e948ca188cc991",
+                "token_type": "normal",
+                "user_id": "fcf36054e88e4c4b9a20092ac8e110c0"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ha.thesoftbytes.com:8123/",
+                "client_name": null,
+                "created_at": "2018-12-26T23:56:43.851486+00:00",
+                "id": "889b62452ab046c2a9b226719d72933b",
+                "jwt_key": "16f45e44f881cbb174835b7dbc653d3d792c58e280a6c1e6649c5ca22a9e156ab3173249ec73092347a0eea34abff9f04b1ccc0f7c59df05ea19726a83841ab4",
+                "last_used_at": "2018-12-27T02:18:08.492669+00:00",
+                "last_used_ip": "73.253.102.254",
+                "token": "e7c0ccef2d075d6c7852e24b90becfe299416911c060e3f77f7449a0da1cdca7e8db03b3332965a0d53e4be50bde36fc91903ccb6639b0b9e9c14a5257cff01f",
+                "token_type": "normal",
+                "user_id": "fcf36054e88e4c4b9a20092ac8e110c0"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ha.thesoftbytes.com:8123/",
+                "client_name": null,
+                "created_at": "2018-12-27T13:00:29.570096+00:00",
+                "id": "13c4c95f8aae49cb950077219752c78a",
+                "jwt_key": "48eba90611c23fb00a13ee3fed6eb069a40b19962ec0bd6fbe40315c88d588abcac5eba8cd9ad77da04d54db22a679e32ec61edd4b3c97f6814859e0094c9b78",
+                "last_used_at": "2018-12-30T15:40:32.986112+00:00",
+                "last_used_ip": "73.253.102.254",
+                "token": "e61425392c49873aaab14eb80b9925f50aa988679789981b99e1845f8cc3ebcc502a6510691d3f02c463546fc99aed2ba1f302036a555f092c196e29ab8b0104",
+                "token_type": "normal",
+                "user_id": "fcf36054e88e4c4b9a20092ac8e110c0"
+            }
+        ],
+        "users": [
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "fcf36054e88e4c4b9a20092ac8e110c0",
+                "is_active": true,
+                "is_owner": true,
+                "name": "Steve Tarara",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "93bd400d4e4d44eead8da8367bd5ecf4",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Legacy API password user",
+                "system_generated": false
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

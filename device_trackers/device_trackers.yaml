@@ -1,0 +1,18 @@
+#Device Tracking File
+- platform: mqtt
+  devices:
+      steve_st: 'location/steve'
+
+# - platform: bluetooth_le_tracker
+#   devices:
+#     steve_xs_ble: '/location/steve'
+#     request_rssi: true
+#     track_new_devices: false
+#
+# - platform: bluetooth_tracker
+#   devices:
+#       steve_xs_2: 'location/steve'
+#       request_rssi: true
+#       consider_home: 180
+#       new_device_defaults:
+#         track_new_devices: false
