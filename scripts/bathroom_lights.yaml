@@ -4,4 +4,4 @@ bathroom_light_control:
     service: light.turn_on
     data:
       entity_id: light.bathroom_lights
-      brightness_pct: 25
+      brightness_pct: 40

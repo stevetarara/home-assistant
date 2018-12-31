@@ -6,15 +6,14 @@
     entity_id: binary_sensor.bed_room_motion_sensor
     to: 'on'
   condition:
-   condition: time
-   before: '11:00'
-   after: '10:00'
+   condition: sun
+   after: sunset
   action:
     - service: light.turn_on
       entity_id: light.bedroom_light
       data:
         transition: 5
-        brightness: 75
+        brightness: 50
     - service: script.turn_on
       entity_id: script.harmony_bedroom_watch_tivo
 
