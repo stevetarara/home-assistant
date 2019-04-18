@@ -1,28 +1,57 @@
-# Turn Bedroom Light on @9pm and set to 30%
-- alias: Bedroom Light On
-  initial_state: 'on'
-  hide_entity: true
+# @6:30 AM every morning, turn the morning light group on switch
+# 20% Brightness and set to the Relax Profile (6AM/PM Sun Color)
+- alias: Morning Light
   trigger:
-    - platform: time
-      at: '21:30:00'
+    platform: sun
+    event: "sunrise"
+    offset: "00:00"
   action:
     service: light.turn_on
     entity_id: light.bedroom_light
     data:
       brightness_pct: 30
-      transition: 120
+      transition: 1800
 
-# Turn Bedroom Light off after 9pm
-- alias: Bedroom Light Off
-  initial_state: 'on'
-  hide_entity: true
+# @8:30 AM every morning, turn the morning light group off
+- alias: Morning Light Off
   trigger:
-    - platform: time
-      at: '22:00:00'
-    - platform: time
-      at: '07:00:00'
+    platform: time
+    at: '07:00:00'
   action:
     service: light.turn_off
     entity_id: light.bedroom_light
     data:
-      transition: 120
+      transition: 300
+
+# Motion Detection between 7AM and 11:30PM
+- alias: Bedroom Motion Detection Automation On
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.bed_room_motion_sensor
+    to: 'on'
+  condition:
+    condition: time
+    after: '07:00'
+    before: '23:30'
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.bedroom_light
+    data:
+      brightness_pct: 40
+
+# Motion Detection Off, trasnition light to off if the motion state is off
+# for 2 minutes
+- alias: Bedroom Motion Detection Automation Off
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.bed_room_motion_sensor
+    to: 'off'
+    for:
+      minutes: 2
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.bedroom_light
+    data:
+      transition: 180

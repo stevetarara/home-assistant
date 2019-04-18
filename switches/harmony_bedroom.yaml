@@ -1,0 +1,20 @@
+- platform: template
+  switches:
+    bedroom_watch_tv:
+      friendly_name: Bedroom TiVo
+      value_template: "{{ is_state_attr('remote.harmony_bedroom_hub', 'current_activity', 'on') }}"
+      turn_on:
+        service: script.turn_on
+        entity_id: script.harmony_bedroom_watch_tivo
+      turn_off:
+        service: script.turn_on
+        entity_id: script.harmony_bedroom_power_off
+    bedroom_watch_appletv:
+      friendly_name: Bedroom Apple TV
+      value_template: "{{ is_state_attr('remote.harmony_bedroom_hub', 'current_activity', 'on') }}"
+      turn_on:
+        service: script.turn_on
+        entity_id: script.harmony_bedroom_watch_appletv
+      turn_off:
+        service: script.turn_on
+        entity_id: script.harmony_bedroom_power_off

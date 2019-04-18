@@ -4,7 +4,7 @@ harmony_bedroom_power_off:
   - data:
       activity: '-1'
     entity_id: remote.bed_room_hub
-    service: remote.turn_off
+    service: remote.turn_on
 
 harmony_bedroom_watch_tivo:
   alias: Watch Bedroom TiVo

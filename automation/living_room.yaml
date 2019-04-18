@@ -2,36 +2,33 @@
 # 20% Brightness and set to the Relax Profile (6AM/PM Sun Color)
 - alias: Morning Lights On
   initial_state: 'on'
-  hide_entity: false
   trigger:
-    platform: time
-    at: '6:30'
+    platform: sun
+    event: "sunrise"
+    offset: "-00:15:00"
   action:
     service: light.turn_on
-    entity_id: light.living_room_lights, light.bedroom_light
-    #light.floor_bloom, light.table_left, light.table_right
+    entity_id: light.living_room_lights
     data:
-      brightness_pct: 40
-      transition: 300
+      brightness_pct: 30
+      transition: 1800
 
 # @8:30 AM every morning, turn the morning light group off
 - alias: Morning Lights Off
   initial_state: 'on'
-  hide_entity: true
   trigger:
     platform: time
     at: '8:30'
   action:
     service: light.turn_off
-    entity_id: light.living_room_lights, light.bedroom_light
+    entity_id: light.living_room_lights
     data:
-      transition: 300
+      transition: 600
 
 # 1/2hr before sunset turn the lights on, turn the morning light group on switch
 # 20% Brightness and set to the Relax Profile (6AM/PM Sun Color)
 - alias: Evening Lights On
   initial_state: 'on'
-  hide_entity: true
   trigger:
     - platform: sun
       event: sunset
@@ -40,20 +37,17 @@
     service: light.turn_on
     entity_id: light.living_room_lights
     data:
-      brightness_pct: 30
-      rgb_color: [255,182,109] # Orange Hue
-      transition: 300
+      brightness_pct: 40
+      color_name: Orange
+      transition: 1800
 
 - alias: Evening Lights Off
   initial_state: 'on'
-  hide_entity: true
   trigger:
     - platform: time
       at: '21:30:00'
   action:
-    service: light.turn_on
-    entity_id: light.living_room_group
+    service: light.turn_off
+    entity_id: light.living_room_lights
     data:
-      brightness_pct: 30
-      rgb_color: [255,182,109] # Orange Hue
-      transition: 300
+      transition: 600

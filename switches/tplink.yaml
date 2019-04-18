@@ -1,10 +1,10 @@
 # Switches
-- platform: tplink
-  name: Tanzs Light
-  host: 192.168.1.102
-  enable_leds: false
+#- platform: tplink
+#  name: Tanzs Light
+#  host: 192.168.1.102
+#  enable_leds: false
 
-- platform: tplink
-  name: Aquarium Bowl Light
-  host: 192.168.1.108
-  enable_leds: false
+#- platform: tplink
+#  name: Aquarium Bowl Light
+#  host: 192.168.1.108
+#  enable_leds: false

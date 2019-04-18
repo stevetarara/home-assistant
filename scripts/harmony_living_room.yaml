@@ -4,13 +4,13 @@ harmony_living_room_power_off:
   - data:
       activity: '-1'
     entity_id: remote.living_room_hub
-    service: remote.turn_off
+    service: remote.turn_on
 
 harmony_living_room_watch_tivo:
   alias: Watch Living Room TiVo
   sequence:
   - data:
-      activity: '31755250'
+      activity: '38988993'
     entity_id: remote.living_room_hub
     service: remote.turn_on
 
@@ -21,4 +21,3 @@ harmony_living_room_watch_appletv:
       activity: '31755302'
     entity_id: remote.living_room_hub
     service: remote.turn_on
-    

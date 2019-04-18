@@ -1,7 +1,14 @@
 - alias: Bathroom Light Automation
-  initial_state: 'on'
   trigger:
-    platform: state
-    entity_id: light.bathroom_lights
+  - platform: state
+    entity_id: light.bathroom_1
+    to: 'on'
   action:
-    service: script.bathroom_light_control
+    - service: script.turn_on
+      entity_id: script.bathroom_light_control
+    - delay: '00:00:03'
+    - service: script.turn_on
+      entity_id: script.bathroom_light_control
+    - delay: '00:00:03'
+    - service: script.turn_on
+      entity_id: script.bathroom_light_control

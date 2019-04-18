@@ -1,6 +1,5 @@
 ## Bedroom Logitech Harmony Hub
 - alias: harmony_bedroom_update_current_status
-  hide_entity: true
   trigger:
   - platform: state
     entity_id: remote.bed_room_hub
@@ -13,29 +12,37 @@
       option: '{{ states.remote.bed_room_hub.attributes.current_activity }}'
 
 - alias: Turn On Bed Room TiVo
-  hide_entity: true
   trigger:
-    platform: state
+  - platform: state
     entity_id: input_select.harmony_br
     to: "TiVo"
   action:
-    service: script.turn_on
-    entity_id: script.harmony_bedroom_watch_tivo
+    - service: script.turn_on
+      entity_id: script.harmony_bedroom_watch_tivo
+
 - alias: Turn On Bed Room AppleTv
-  hide_entity: true
   trigger:
-    platform: state
+  - platform: state
     entity_id: input_select.harmony_br
     to: "AppleTV"
   action:
-    service: script.turn_on
-    entity_id: script.harmony_bedroom_watch_appletv
+    - service: script.turn_on
+      entity_id: script.harmony_bedroom_watch_appletv
+
 - alias: Turn Off Bed Room Media
-  hide_entity: true
   trigger:
-    platform: state
+  - platform: state
     entity_id: input_select.harmony_br
     to: "PowerOff"
   action:
-    service: script.turn_on
-    entity_id: script.harmony_bedroom_power_off
+    - service: script.turn_on
+      entity_id: script.harmony_bedroom_power_off
+
+# Turn TV Off at 12:30AM
+- alias: Turn Off Bed Room TiVo
+  trigger:
+  - platform: time
+    at: '00:30'
+  action:
+    - service: script.turn_on
+      entity_id: script.harmony_bedroom_power_off

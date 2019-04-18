@@ -1,5 +1,4 @@
 - alias: harmony_living_room_update_current_status
-  hide_entity: true
   trigger:
   - platform: state
     entity_id: remote.living_room_hub
@@ -12,9 +11,8 @@
       option: '{{ states.remote.living_room_hub.attributes.current_activity }}'
 
 - alias: Turn On Living Room TiVo
-  hide_entity: true
   trigger:
-    platform: state
+  - platform: state
     entity_id: input_select.harmony_lr
     to: "TiVo"
   action:
@@ -26,9 +24,8 @@
       entity_id: scene.watch_living_room_media
 
 - alias: Turn On Living Room AppleTv
-  hide_entity: true
   trigger:
-    platform: state
+  - platform: state
     entity_id: input_select.harmony_lr
     to: "AppleTV"
   action:
@@ -40,9 +37,8 @@
       entity_id: scene.watch_living_room_media
 
 - alias: Turn Off Living Room Media
-  hide_entity: true
   trigger:
-    platform: state
+  - platform: state
     entity_id: input_select.harmony_lr
     to: "PowerOff"
   action:

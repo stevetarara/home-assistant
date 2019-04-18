@@ -1,6 +1,5 @@
 - alias: Tanz Light On
   initial_state: 'on'
-  hide_entity: true
   trigger:
     platform: time
     at: '10:00:00'
@@ -9,7 +8,6 @@
 
 - alias: Tanz Light Off
   initial_state: 'on'
-  hide_entity: true
   trigger:
     platform: time
     at: '16:30:00'

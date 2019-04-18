@@ -2,7 +2,7 @@ tracker_group:
     name: Steve
     entities:
      - device_tracker.steve_st
-     - device_tracker.steve_mobile
+     #- device_tracker.steve_mobile
      - input_boolean.steve_present
 
 living_room_group:
@@ -11,6 +11,7 @@ living_room_group:
      - light.table_left
      - light.table_right
      - light.floor_bloom
+     - light.desk_light
 
 all_light_group:
   name: All Controllable Lights
@@ -20,9 +21,11 @@ all_light_group:
     - light.laundry_light
     - light.bedroom_light
     - group.bathroom_lights
+    - light.bedroom_light
 
 morning_light_group:
   name: Morning Light Group
   entities:
     - light.living_room_group
     - light.laundry_light
+    - light.hall_light

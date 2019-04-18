@@ -12,9 +12,14 @@
     - light.table_left
     - light.table_right
 
-# - platform: group
-#   name: Morning Lights
-#   entities:
-#     - light.living_room_lights
-#     - light.laundry_light
-#     - light.hall_light
+- platform: group
+  name: Computer Room Lights
+  entities:
+    - light.desk_light
+
+
+# THis is for the led strips using the ESP devices.
+- platform: flux_led
+  devices:
+    192.168.1.122:
+      name: Desk Light

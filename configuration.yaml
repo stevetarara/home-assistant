@@ -13,6 +13,17 @@ homeassistant:
   # Customization file
   customize: !include_dir_merge_named customize
 
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+  #extra_html_url:
+    #- /local/hass-fontawesome-solid.html
+    #- /local/hass-fontawesome-regular.html
+    #- /local/hass-fontawesome-brands.html
+
 zone 1:
   name: Work
   latitude: 42.367007
@@ -20,28 +31,13 @@ zone 1:
   radius: 100
   icon: mdi:worker
 
-zone 2:
-    name: Gym
-    latitude: 42.557658
-    longitude: -71.435385
-    radius: 100
-    icon: mdi:dumbbell
-
-
-# Show links to resources in log and frontend
-#introduction:
-
-# Enables the frontend
-frontend:
-
 # Enables configuration UI
 config:
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-http:
-  base_url: !secret http_url
-  api_password: !secret api_password
-
+#http:
+#  base_url: !secret http_url
+#  api_password: !secret api_password
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -64,6 +60,9 @@ history:
 # View all events in a logbook
 logbook:
 
+# System Health
+system_health:
+
 # Enables a map showing the location of tracked devices
 map:
 
@@ -76,21 +75,25 @@ weather:
   mode: daily
 
 # Text to speech
-tts:
-  - platform: google
+#tts:
+# - platform: google
 
 # Cloud
 cloud:
+  alexa:
+    filter:
+      include_domains:
+        - light
 
 # Logitech Remote
 remote:
   - platform: harmony
-    hide_entity: true
     name: Living Room Hub
     host: 192.168.1.104
+    entities:
+      switch.watch_tv
 
   - platform: harmony
-    hide_entity: true
     name: Bed Room Hub
     host: 192.168.1.116
 
@@ -100,6 +103,12 @@ wemo:
   static:
     - 192.168.1.101
     - 192.168.1.112
+
+# tplink component
+tplink:
+  switch:
+    - host: 192.168.1.102 # Aquarium Bowl
+    - host: 192.168.1.108 # Tanzs Light
 
 # homekit enabled
 homekit:
@@ -111,11 +120,15 @@ homekit:
       - light.laundry
       - light.hall
       - light.bedroom
+      - light.desk_light
       - switch.tanzs_light
       - switch.aquarium_bowl_light
       - binary_sensor.bed_room_motion_sensor
       - input_boolean.steve_present
-
+      - switch.watch_tv
+      - switch.watch_appletv
+      - switch.bedroom_watch_tv
+      - switch.bedroom_watch_appletv
 
 #secret: !include_dir_merge_list secrets
 automation: !include_dir_merge_list automation
